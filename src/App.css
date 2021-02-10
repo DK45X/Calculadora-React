@@ -1,0 +1,145 @@
+body{
+	background: #03001e;  /* fallback for old browsers */
+	background: -webkit-linear-gradient(to right, #fdeff9, #ec38bc, #7303c0, #03001e);  /* Chrome 10-25, Safari 5.1-6 */
+	background: linear-gradient(to right, #fdeff9, #ec38bc, #7303c0, #03001e); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+	font-family: 'Press Start 2P', cursive;
+}
+
+.title{
+	font-size: 25px;
+	text-align: center;
+	color: #ffffff;  
+	font-family: 'Press Start 2P', cursive;
+	/*Darle borde a un texto*/
+	-webkit-text-stroke: 1px rgb(76, 0, 119);
+}
+
+
+
+.container{
+	/*width: 1000px;*/
+	height: 550px;
+	margin: 20px auto;	
+}
+/*Se maneja las medidas de la calculadora, los colores de fondo de la misma y la posicion en pantalla*/
+.calculator{
+	width: 320px;
+	height: 520px;
+	background-color: #eaedef;
+	margin: 0 auto;
+	top: 100px;
+	position: relative;
+	border-radius: 5px;
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+/*El alto donde se mostrara el resultado de las operaciones*/
+.result{
+	height: 120px;
+}
+
+
+/*El espacio donde se nos mostrara lo que estamos digitando en pantalla.*/
+#output, input{
+	text-align: right;
+	height: 60px;
+	margin: 10px 20px;
+	font-size: 20px;
+	border: none;
+    background: #eaedef;
+
+}
+/*El espacio que le damos al teclado*/
+.keyboard{
+	height: 400px;
+}
+.operator, .number{
+	width: 50px;
+	height: 50px;
+	margin: 15px;
+	float: left;
+	border-radius: 50%;
+	border-width: 0;
+	font-weight: bold;
+	font-size: 15px;
+	font-family: 'Press Start 2P', cursive;
+	
+}
+
+.operator1{
+	width: 50px;
+	height: 50px;
+	margin: 15px;
+	float: left;
+	position: relative;
+	left: 160px;
+	cursor: pointer;
+	border-radius: 50%;
+	border-width: 0;
+	font-weight: bold;
+	font-size: 15px;
+	font-family: 'Press Start 2P', cursive;
+	background-color: #eaedef;
+}
+
+.number1{
+	width: 50px;
+	height: 50px;
+	margin: 15px;
+	float: left;
+	position: relative;
+	left: 80px;
+	border-radius: 50%;
+	border-width: 0;
+	font-weight: bold;
+	font-size: 15px;
+	font-family: 'Press Start 2P', cursive;
+	background-color: #eaedef;
+	border-color: none;
+}
+
+.number, .empty{
+	background-color: #eaedef;
+}
+.number, .operator{
+	cursor: pointer;
+}
+.operator:active, .number:active{
+	font-size: 13px;
+}
+.operator:focus, .number:focus, .empty:focus{
+	outline: 0;
+}
+
+button:nth-child(4){
+	font-size: 20px;
+	background-color: #f345f3;
+}
+
+button:nth-child(5){
+	font-size: 20px;
+	background-color: #5ef2ea;
+}
+button:nth-child(9){
+	font-size: 20px;
+	background-color: #ebb249;
+}
+button:nth-child(13){
+	font-size: 20px;
+	background-color: #f05454;
+}
+button:nth-child(17){
+	font-size: 20px;
+	background-color: #415dc5;
+}
+button:nth-child(19){
+	font-size: 20px;
+	background-color: #7df725;
+}
+@media(max-width: 8000px){
+	.container{
+		height: 550px;
+        margin: 20px auto;
+	}
+}
+	
+
